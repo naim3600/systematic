@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Area (style)</title>
+</head>
+<body>
+    <section id="hero_area">
+        <div class="inner_hero container">
+            <img src="../img/hero_image.jpg" alt="Hero" class="alignleft">
+            <h1>A HUGE TITLE HERE</h1>
+            <p>Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur pede. Idet mollisi eros dis orci congue elis et curabitur consequam intesque. Curabiturpisametur in ante.</p>
+            <a href="#">READ MORE »</a>
+        </div>
+    </section>
+
+    <style>
+        body{line-height: 1.5em;}
+        .container{
+            width: 96%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        img{max-width: 100%; height:  auto;}
+        .alignleft{float: left; margin-right: 40px; margin-bottom: 15px;}
+        /*===========
+        Hero CSS
+        ============*/
+        #hero_area{
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+        }
+        .inner_hero{
+            overflow: hidden;
+            
+            box-shadow: 5px 5px 25px 5px grey;
+        }
+        .inner_hero h1{
+            color: #000;
+            font-size: 86px;
+            font-weight: normal;
+            line-height: 1em;
+            font-family: georgia, sans-serif;
+            margin-bottom: 15px;
+        }
+        .inner_hero p{
+            color: #666666;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: georgia, sans-serif;
+        }
+        .inner_hero a{
+            display: block;
+            float: right;
+            color: #ba2e1f;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .inner_hero a:hover{
+            color: #000;
+        }
+
+    </style>
+</body>
+</html>

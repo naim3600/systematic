@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <title>H!!!!!!!!!!!!</title>
+</head>
+<body>
+    <header class="header_area">
+        <div id="top_header_area">
+            <div class="inner_top_header container">
+                <div class="mini_menu">
+                    <ul>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">RSS Feeds</a></li>
+                        <li><a href="">Archived News</a></li>
+                    </ul>
+                </div>
+                <div class="search_area">
+                    <form action="">
+                        <input type="text" placeholder="Search Here">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="main_header_area">
+            <div class="inner_header container">
+                <div class="logo_area">
+                    <a href="hahaha.html">
+                        <img src="../img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="social_area">
+                    <ul>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fas fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        /*=====================================
+                Common CSS
+        ======================================*/
+        body{
+            color: #666666;
+            font-family: Georgia, 'Times New Roman', Times, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            margin: 0;
+        }
+        .container{
+            width: 96%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        /*=================================
+            top header CSS
+        ================================*/
+        .header_area{
+            width: 100%;
+            clear: both;
+        }
+        #top_header_area{
+            width: 100%;
+            background: #ba2e1f;
+            padding: 15px 0;
+        }
+        .inner_top_header{
+            overflow: hidden;
+        }
+        .mini_menu{
+            width: 70%;
+            float: left;
+            padding-top: 4px;
+        }
+        .mini_menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .mini_menu ul li{
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+        .mini_menu ul li::after{
+            content: "";
+            position: absolute;
+            top: 7px;
+            right: -10px;
+            width: 1px;
+            height: 12px;
+            background: #fff;
+        }
+        .mini_menu ul li:last-child::after{
+            display: none;
+        }
+
+        .mini_menu ul li a{
+            color: #fff;
+            display: block;
+            font-size: 14px;
+            font-family: Georgia, sans-serif;
+            text-decoration: none;
+        }
+        .mini_menu ul li a:hover{
+            color: #ddd;
+        }
+
+        .search_area{
+            width: 30%;
+            float: right;
+        }
+        .search_area form{
+           width: 96%;
+           max-width: 210px;
+           background: #fff;
+           border-radius: 25px;
+           float: right;
+           padding: 2%;
+        } 
+        .search_area input{
+            width: 75%;
+            float: left;
+            padding: 1%;
+            border: 0px solid;
+            color: #000;
+        }
+        .search_area input[type="submit"]{
+            width: 23%;
+            float: right;
+            background: url("../img/search.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            cursor: pointer;
+        }
+        
+
+    </style>
+</body>
+</html>

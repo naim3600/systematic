@@ -1,0 +1,168 @@
+/*==========================================
+                Common CSS
+=========================================*/
+
+body{
+    color: #666;
+    font-family: Georgia, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/*==================================================
+                 Top Header CSS
+=================================================*/
+
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    width: 100%;
+    background: #ba2e1f;
+    padding: 15px 0;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+.mini_menu{
+    float: left;
+    width: 70%;
+}
+.mini_menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    width: 1px;
+    height: 12px;
+    background: #ffff;
+}
+.mini_menu ul li:last-child::after{
+  display: none;
+}
+.mini_menu ul li a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.mini_menu ul li a:hover{
+    color: #ddd;
+}
+
+.search_area{
+    float: right;
+    width: 30%;
+}
+.search_area form{
+   width: 96%;
+   max-width: 210px;
+   background: #fff;
+   border-radius: 25px;
+   padding: 2%;
+   float: right;
+}
+.search_area input{
+   width: 75%;
+   float: left;
+   border: 0px solid;
+   color: #000;
+   padding: 1%;
+ }
+ .search_area input[type="submit"]{
+     width: 23%;
+     float: right;
+     background: url("../../img/search.png");
+     background-repeat: no-repeat;
+     background-position: right;
+     cursor: pointer;
+ }
+ /*=================================
+            Main Header CSS
+ =================================*/
+
+#main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    overflow: hidden;
+    padding: 40px;
+
+}
+.logo_area{
+    width: 240px;
+    float: left;
+}
+.social_area{
+    width: 100%;
+    max-width: 600px;
+    float: right;
+}
+.social_area ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li a i{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 9px;    
+}
+.social_area ul li a:hover i{
+    background: #ba2e1f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

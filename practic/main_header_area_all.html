@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="refresh" content="1111">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../css/all.min.css" rel="stylesheet">
+	<link href="../css/fontawesome.min.css" rel="stylesheet">
+	<title>Main Header All</title>
+</head>
+<body>
+
+<header class="header_area">
+    <div id="top_header_area">
+        <div class="inner_top_header container">
+            <div class="mini_menu">
+                <ul>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">RSS Feeds</a></li>
+                    <li><a href="#">Archived News</a></li>
+                </ul>
+            </div>
+            <div class="search_area">
+                <form action="">
+                    <input type="text" placeholder="Search here">
+                    <input type="submit" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+	
+	<div id="main_header_area">
+		<div class="inner_header container">
+			<div class="logo_area">
+				<a href="main_header_area_all.html">
+					<img src="../img/logo.png">
+				</a>
+			</div>
+			<div class="social_area">
+				<ul>
+					<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-pinterest"></i></a></li>
+					<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+					<li><a href=""><i class="fas fa-rss"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</header>
+	
+	<style>
+/*===================================
+	Common CSS
+====================================*/
+
+body{
+   color: #666666;
+   font-family: Georgia, sans-serif;
+   font-size: 16px;
+   line-height: 1.5em;
+   margin: 0;
+}
+
+.container{
+   margin: 0 auto;
+   max-width: 960px;
+   width: 96%;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+a{
+	text-decoration: none;
+}
+
+/*===================================
+	Top header CSS
+====================================*/
+
+.header_area{
+   width: 100%;
+   clear: both;
+}
+#top_header_area{
+   background: #ba2e1f;
+   padding: 15px 0;
+   width: 100%;
+}
+
+.inner_top_header{
+   overflow: hidden;
+}
+
+.mini_menu{
+   float: left;
+   width: 70%;
+   padding-top: 5px;
+}
+.mini_menu ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: left; 
+}
+
+.mini_menu ul li{
+   display: inline-block;
+   position: relative;
+   margin-right: 20px;
+}
+
+.mini_menu ul li::after{
+   background: #ffffff;
+   content: "";
+   position: absolute;
+   top: 6px;
+   right: -9px;
+   height: 12px;
+   width: 1px;
+}
+.mini_menu ul li:last-child::after{
+   display: none;
+}
+
+.mini_menu ul li a{
+   color: #ffffff;
+   display: block;
+   font-size: 14px;
+
+}
+.mini_menu ul li a:hover{
+   color: #ddd;
+}
+
+.search_area{
+   float: right;
+   width: 30%;
+}
+.search_area form{
+   background: #fff;
+   border-radius: 25px;
+   float: right;
+   padding: 2%;
+   max-width: 210px;
+   width: 96%;
+}
+.search_area input{
+   border: 0px solid;
+   width: 75%;
+   padding: 1%;
+   float: left;
+   color: #000;
+}
+.search_area input[type="submit"]{
+   background: url("../img/search.png");
+   background-repeat: no-repeat;
+   background-position: right;
+   width: 23%;
+   cursor: pointer;
+}
+
+
+/*===============================
+	Main Header CSS
+================================*/
+	#main_header_area{
+		width: 100%;
+		clear: both;
+		background: #baeadf;/*=====*/
+	}
+	.inner_header{
+		overflow: hidden;
+		padding: 40px 0;
+		background: #adfeee;/*=====*/
+	}
+	.logo_area{
+		float: left; 
+		width: 240px;
+		background: #ffaeca;/*======*/
+	}
+	.social_area{
+		float: right;
+		width: 600px;
+		background: #Effaac;/*=====*/
+	}
+	.social_area ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	.social_area ul li{
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.social_area ul li a{
+		display: block;
+		text-decoration: none;
+	}
+	.social_area ul li a i{
+		display: block;
+		background: #333333;
+		color: #fff;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		text-align: center;	
+	    box-sizing: border-box;
+	    padding-top: 9px;		
+	}
+	.social_area ul li a:hover i{
+		background: #ba2e1f;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*#main_header_area{
+		width: 100%;
+		clear: both;
+	}
+	.inner_header{
+		overflow: hidden;
+		padding: 40px 0;
+	}
+	.logo_area{
+		width: 240px;
+		float: left;
+	}
+	.social_area{
+		width: 600px;
+		float: right;
+
+	
+	
+	}
+	.social_area ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: right;	
+	}
+	.social_area ul li{
+		display: inline-block;
+		margin-left: 15px;
+	}
+	.social_area ul li a{
+		display: block;
+		text-decoration: none;
+	}
+	.social_area ul li a i{
+		display: black;
+		color: #fff;
+		background: #333333;
+		width: 35px;
+		height: 25px;
+		text-align: center;
+		border-radius: 50%;
+		padding-top: 9px;
+		transition: 0.5s;
+	}
+	.social_area ul li a:hover i{
+		background: #ba2e1f;
+	}
+	*/
+	
+	
+	
+
+
+
+
+	</style>
+
+</body>
+</html>

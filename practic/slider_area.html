@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="111">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Area</title>
+</head>
+<body>
+    <!-- <section id="slider_area">
+        <div class="inner_slider container">
+            <div class="slider_area">
+                <div class="item">
+                    <img src="../img/slider_01.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../img/slider_02.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="../img/slider_03.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <section id="slider_area">
+        <div class="inner_slider container">
+            <div class="slider_area">
+                <img src="../img/slider_01.jpg" alt="" class="slider_img">
+                <div class="left_arow"></div>
+                <div class="right_arow"></div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 96%;
+            max-width: 960px;
+        }
+        .slider_area > div{
+            position: relative;
+
+        }
+        .slider_area .left_arow::after{
+            content: "<";
+            font-size: 3em;
+            color: #ddd;
+            position: absolute;
+            left: 5px;
+            top:  -380px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .slider_area .left_arow:hover::after{
+            background: rgb(116, 114, 114);
+        }
+
+        .slider_area .right_arow::after{
+            content: ">";
+            font-size: 3em;
+            color: #ddd;
+            position: absolute;
+            right: 5px;
+            top:  -380px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .slider_area .right_arow:hover::after{
+            background: rgb(116, 114, 114);
+        }
+    </style>
+    <script>
+        var left_arow = document.querySelector(".left_arow");
+        var right_arow = document.querySelector(".right_arow");
+        var img = document.querySelector(".slider_img")
+        var conten = 0;
+        var slider = ["../img/slider_01.jpg", "../img/slider_02.jpg", "../img/slider_03.jpg"];
+        right_arow.addEventListener("click", function(){
+            conten ++;
+            if(conten == 3)
+            {
+                conten = 0;
+            }
+            img.src = slider[conten];
+        });
+        left_arow.addEventListener("click", function(){
+            conten --;
+            if(conten == -1)
+            {
+                conten = 2;
+            }
+            img.src = slider[conten];
+        });
+
+
+    </script>
+</body>
+</html>

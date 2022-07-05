@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top header</title>
+</head>
+<body>
+    
+    <header class="header_area">
+        <div id="top_header_area">
+            <div class="inner_top_header container">
+                <div class="mini_menu">
+                    <ul>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">RSS Feeds</a></li>
+                        <li><a href="">Archived News</a></li>
+                    </ul>
+                </div>
+                <div class="search_area">
+                    <form action="">
+                        <input type="text" placeholder="Search Here">
+                        <input type="submit" value=" ">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <style>
+        /*========================
+                Common CSS
+        =======================*/
+
+        body{
+            color: #666666;
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            margin: 0;
+        }
+        .container{
+            width: 96%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        /*=======================================
+                    top header css
+        =========================================*/
+        .header_area{
+            width: 100%;
+            clear: both;
+        }
+        #top_header_area{
+            width: 100%;
+            background: #ba2e1f;
+            padding: 15px 0px;
+        }
+        .inner_top_header{
+            overflow: hidden;
+        }
+        .mini_menu{
+            width: 70%;
+            float: left;            
+        }
+        .mini_menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .mini_menu ul li{
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+        .mini_menu ul li::after{
+            content: "";
+            width: 1px;
+            height: 12px;
+            background: #ffffff;
+            position: absolute;
+            top: 7px;
+            right: -10px;
+        }
+        .mini_menu ul li:last-child::after{
+            display: none;
+        }
+        .mini_menu ul li a{
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Georgia, sans-serif;
+        }
+        .mini_menu ul li a:hover{
+            color: #ddd;
+        }
+
+        .search_area{
+            width: 30%;
+            float: right;          
+        }
+        .search_area form{
+            width: 96%;
+            max-width: 210px;
+            background: #ffffff;
+            border-radius: 14px;
+            float: right;
+            padding: 2%;           
+        }
+        .search_area form input{
+            border: 0px solid;
+            width: 75%;
+            float: left;
+            padding: 1%;
+            color: #000;
+        }
+        .search_area form input[type="submit"]{
+            width: 23%;
+            background: url("../img/search.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            cursor: pointer;
+        }
+
+    </style>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

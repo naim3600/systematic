@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>All Charset</title>
+</head>
+<body>
+
+    <header class="header_area">
+        <div id="top_header_area">
+            <div class="inner_top_header container">
+                <div class="mini_menu">
+                    <ul>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">RSS Feeds</a></li>
+                        <li><a href="">Archived News</a></li>
+                    </ul>
+                </div>
+                <div class="search_area">
+                    <form action="">
+                        <input type="text" placeholder="Search Here">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="main_header_area">
+            <div class="inner_header container">
+                <div class="logo_area">
+                    <a href="">
+                        <img src="../img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="social_area">
+                    <ul>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fas fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav id="main_menu">
+            <div class="inner_menu container">
+                <ul>
+                    <li><a href="">HOMEPAGE</a></li>
+                    <li><a href="">STYLE DEMO</a></li>
+                    <li><a href="">FULL WIDTH</a></li>
+                    <li><a href="">DROPDOWN</a>
+                    <ul>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a>
+                        <ul>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                        <li><a href="">Dropdown Menu</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">LINK TEXT</a></li>
+                    <li><a href="">LONG LINK TEXT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <style>
+        /*================================
+            Common CSS
+        ==================================*/
+
+        body{
+            color: #666666;
+            font-family: Georgia, sans-serif;
+            font-size: 16px;
+            line-height: 1.5em;
+            margin: 0;
+        }
+        .container{
+            width: 96%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+        /*====================================
+            Top Header CSS
+        ================================*/
+        .header_area{
+            width: 100%;
+            clear: both;
+        }
+        #top_header_area{
+            width: 100%;
+            background: #ba2e1f;
+            padding: 15px 0;
+        }
+        .inner_top_header{
+            overflow: hidden;
+        }
+        .mini_menu{
+            width: 70%;
+            float: left;
+        }
+        .mini_menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .mini_menu ul li{
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+        .mini_menu ul li::after{
+            content: "";
+            position:absolute;
+            top: 7px;
+            right: -10px;
+            width: 1px;
+            height: 12px;
+            background: #fff;
+        }
+        .mini_menu ul li:last-child::after{
+            display: none;
+        }        
+
+        .mini_menu ul li a{
+            display: block;
+            color: #fff;
+            font-size: 14px;
+            transition: 0.5s;
+        }
+
+        .mini_menu ul li a:hover{
+            color: #ddd;
+        }
+      
+        .search_area{
+            width: 30%;
+            float: right;
+        }
+        .search_area form{
+            width: 96%;
+            max-width: 210px;
+            background: #fff;
+            float: right;
+            border-radius: 25px;
+            padding: 2%;
+        }
+        .search_area form input{
+            width: 75%;
+            border: 0px solid;
+            padding: 1%;
+            color: #000;
+            float: left;
+        }
+        .search_area form input[type="submit"]{
+            width: 23%;
+            float: right;
+            background: url("../img/search.png");
+            background-repeat: no-repeat;
+            background-position: right;
+            cursor: pointer;
+        }
+        /*==============================
+            Main Header CSS
+        =================================*/
+
+        #main_header_area{
+            width: 100%;
+            clear: both;
+        }
+        .inner_header{
+            overflow: hidden;
+            padding: 40px 0;
+        }
+        .logo_area{
+            width: 240px;
+            float: left;
+        }
+        .social_area{
+            width: 100%;
+            max-width: 600px;
+            float: right;
+            padding-top: 20px;
+        }
+        .social_area ul{
+            margin: 0px;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+        }
+        .social_area ul li{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .social_area ul li a{
+            display: block;
+        }.social_area ul li a:hover i{
+            background: #ba2e1f;
+        }
+        .social_area ul li a i{
+            width: 35px;
+            height: 35px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            box-sizing: border-box;
+            padding-top: 9px;
+        }
+        .social_area ul li a:hover i.fa-linkedin-in{
+            background: #2779c3;
+        }
+        .social_area ul li a:hover i.fa-twitter{
+            background: #02bafa;
+        }
+        .social_area ul li a:hover i.fa-pinterest{
+            background: #b60719;
+        }
+        .social_area ul li a:hover i.fa-google-plus-g{
+            background: #d44b3f;
+        }
+        .social_area ul li a:hover i.fa-rss{
+            background: #ee802f;
+        }
+        /*==============================================
+                    Main Menu CSS
+        ==========================================*/
+
+
+        #main_menu{
+            width: 100%;
+            clear: both;
+        }
+        .inner_menu{
+            min-height: 30px;
+            background: #333333;
+            padding: 15px 0;
+            position: relative;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .inner_menu::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: #2b2b2b;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        #main_menu ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        #main_menu ul li{
+            display: inline-block;
+            margin: 0 5px;
+            position: relative;
+        }
+
+        #main_menu ul li a{
+            color: #fff;
+            display: block;
+            padding: 2px;
+            transition: 0.5s;
+        }
+        #main_menu ul li a:hover{
+            color: #ba2e1f;
+        }
+        /*Dropdown Menu*/
+
+        #main_menu ul ul{
+            position: absolute;
+            left: 0;
+            top: 27px;
+            background: #ba2e1f;
+            width: 180px;
+        }
+        /*New Dropdown add*/
+        #main_menu ul ul{
+            left: 180px;
+            top: 0px;    
+        }
+        #main_menu ul ul li{
+            margin: 0;
+            display: block;
+        }
+
+
+
+    </style>
+</body>
+</html>

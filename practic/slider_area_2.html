@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bxslider.min.css">
+    <title>Slider Area pracitce 2</title>
+</head>
+<body>
+<section id="slider_area">
+    <div class="inner_slider container">
+        <div class="slider_area">
+            <div class="item">
+                <div class="slider_caption">
+                    <h1>Welcome</h1>
+                </div>
+                <img src="../img/slider_01.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/slider_02.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.slider_area').bxSlider();
+    });
+  </script>
+  <style>
+      /*==================Slider CSS==============*/
+      #slider_area{margin-top: 20px;}
+      .item{position: relative;}
+      .slider_caption{width: 100%; text-align: center; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+      .slider_caption h1{color: #fff; font-size: 32px;}
+
+
+  </style>
+</body>
+</html>
+
+
